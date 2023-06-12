@@ -1,6 +1,6 @@
-resource "aws_launch_template" "my_launch_template" {
+resource "aws_launch_template" "intuitive_launch_template" {
 
-  name = "my_launch_template"
+  name = "intuitive_launch_template"
 
   image_id = "ami-06878d265978313ca"
   instance_type = "t2.micro"
@@ -19,7 +19,7 @@ resource "aws_launch_template" "my_launch_template" {
 
   network_interfaces {
     associate_public_ip_address = true
-    security_groups = [aws_security_group.my_sg.id]
+    security_groups = [aws_security_group.intuitive_sg.id]
   }
 }
 
